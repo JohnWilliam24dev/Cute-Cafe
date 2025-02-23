@@ -1,13 +1,13 @@
-package com.johnwilliam.cutecafe.cutecafe;
+package com.johnwilliam.cute_cafe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CutecafeApplication {
+public class CuteCafeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CutecafeApplication.class, args);
+		SpringApplication.run(CuteCafeApplication.class, args);
 	}
 
 }
