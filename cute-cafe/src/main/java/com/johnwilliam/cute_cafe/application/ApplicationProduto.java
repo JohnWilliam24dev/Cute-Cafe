@@ -1,5 +1,7 @@
 package com.johnwilliam.cute_cafe.application;
 
+import java.util.ArrayList;
+
 import com.johnwilliam.cute_cafe.entities.Produto;
 import com.johnwilliam.cute_cafe.provider.ProviderProduto;
 import com.johnwilliam.cute_cafe.repositorie.RepositorieProduto;
@@ -27,5 +29,11 @@ public class ApplicationProduto {
     }
     public Produto buscarByID(int id){
         return repositorieProduto.searchProductByID(id);
+    }
+    public ArrayList<Produto> listaProdutos(){
+        return repositorieProduto.getList();
+    }
+    public double calcularLanche(Produto produto, int quantidade) {
+        return produto.getValor() * quantidade;
     }
 }
